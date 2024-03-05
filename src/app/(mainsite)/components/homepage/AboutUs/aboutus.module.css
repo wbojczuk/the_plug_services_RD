@@ -10,7 +10,7 @@
 
 .imgWrapper{
     position: relative;
-    transform: rotate(-2deg);
+    /* transform: rotate(-2deg); */
 }
 
 .imgWrapper::after{
