@@ -1,0 +1,86 @@
+/* TEMPLATE
+
+<a className="main-link">Let's Go!  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.038 6.343l-1.411 1.418l3.27 3.255l-13.605.013l.002 2l13.568-.013l-3.215 3.23l1.417 1.41l5.644-5.67z"></path></svg></a>
+
+*/
+
+.main-link{
+    cursor: pointer;
+    position: relative;
+    font-weight: 400;
+    display: inline-flex;
+    align-items: center;
+    color: var(--secondary-text-color);
+    padding: 0.6vw 1.8vw;
+    text-decoration: none;
+    font-size: 1.3rem;
+    border-radius: 999px;
+    font-weight: 500;
+    z-index: 10;
+    transition: 0.4s transform;
+    background-color: var(--primary-color);
+  }
+  
+  .main-link:hover{
+    transform: translateY(-2px);
+  }
+  
+  .main-link:hover::after{
+    transform: translateY(4px);
+  }
+  
+  .main-link svg{
+    margin-left: 0.6vw;
+    display: inline-block;
+    width: 2vw;
+    height: 2vw;
+    aspect-ratio: 1/1;
+    transition: 0.4s transform;
+  }
+  .main-link svg path{
+    fill: var(--secondary-text-color);
+  }
+  
+  .main-link:hover svg{
+    transform: translateX(6px);
+  }
+
+  /* MEDIUM LAPTOP STYLES */
+@media only screen and (min-width: 1401px) and (max-width: 1900px){
+    .main-link{
+      padding:0.6vw 2.2vw;
+    }
+  }
+  
+  
+  /* SMALL LAPTOP STYLES */
+  @media only screen and (min-width: 991px) and (max-width: 1400px){
+    .main-link{
+      padding: 1.2vw 2.4vw;
+    }
+  }
+  
+  /* TABLET STYLES */
+  @media only screen and (min-width: 650px) and (max-width: 990px){
+    .main-link{
+      padding: 1.8vw 6vw;
+    }
+    .main-link svg{
+      margin-left: 1.5vw;
+      width: 3vw;
+      height: 3vw;
+    }
+  }
+  
+  /* MOBILE STYLES */
+  @media only screen and (max-width: 649px){
+    .main-link{
+      padding: 3vw 10vw;
+      font-size: 1.5rem;
+    }
+    .main-link svg{
+      margin-left: 2vw;
+      width: 5vw;
+      height: 5vw;
+    }
+  }

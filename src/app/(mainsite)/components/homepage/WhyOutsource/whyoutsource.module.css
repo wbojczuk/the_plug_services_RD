@@ -1,0 +1,118 @@
+.whyOutsource{
+    padding: var(--section-padding);
+    position: relative;
+}
+
+.whyOutsource h1{
+    text-align: center;
+    font-size: 6rem;
+}
+
+.reasons{
+    margin: 6vw 0 2vw 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.reasonItem{
+    flex-direction: column;
+    align-items: center;
+    display: inline-flex;
+    width: 25%;
+
+}
+
+.reasonItem h4{
+    font-size: 2.1rem;
+    font-weight: 500;
+    margin-top: 0.5vw;
+}
+
+.reasonItem p{
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 200%;
+    padding: 1vw 5%;
+}
+
+.reasonItem svg{
+    width: 5vw;
+    height: 5vw;
+}
+
+.reasonItem svg path{
+    fill: var(--primary-color);
+}
+
+/* TABLET AND LOWER STYLES */
+@media only screen and (max-width: 990px){
+    .reasons{
+        margin: 8vw 0 3vw 0;
+        gap: 2vw;
+    }
+    
+    .reasonItem{
+        flex-direction: column;
+        align-items: center;
+        display: inline-flex;
+        width: 30%;
+    
+    }
+    
+    .reasonItem h4{
+        text-align: center;
+        font-size: 2.1rem;
+        margin-top: 1vw;
+    }
+    
+    .reasonItem p{
+        text-align: center;
+        line-height: 200%;
+        padding: 1.5vw 0;
+        font-size: 1.3rem;
+    }
+    
+    .reasonItem svg{
+        width: 7vw;
+        height: 7vw;
+    }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    .reasons{
+        margin: 14vw 0 3vw 0;
+        gap: 4vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .whyOutsource h1{
+        font-size: 4rem;
+    }
+    
+    .reasonItem{
+        flex-direction: column;
+        align-items: center;
+        display: inline-flex;
+        width: 60%;
+    
+    }
+    
+    .reasonItem h4{
+        font-size: 2.4rem;
+        margin-top: 2.5vw;
+    }
+    
+    .reasonItem p{
+        padding: 2vw 0;
+        font-size: 1.4rem;
+    }
+    
+    .reasonItem svg{
+        width: 10vw;
+        height: 10vw;
+    }
+}
