@@ -88,8 +88,15 @@
 }
 
 .copyright{
-    padding: 2vw 0;
+    padding: 1vw 0 2vw;
     text-align: center;
+    font-size: 1.2rem;
+}
+
+.copyrighttwo{
+    padding: 0;
+    text-align: center;
+    padding-top: 2vw;
     font-size: 1.2rem;
 }
 
@@ -140,10 +147,17 @@
     }
     
     .copyright{
-        padding: 3vw 0;
+        padding: 1.5vw 0 3vw 0;
         text-align: center;
         font-size: 1.3rem;
     }
+    .copyrighttwo{
+        
+        padding: 0;
+        padding-top: 3vw;
+        font-size: 1.3rem;
+    }
+    
 }
  
 /* MOBILE STYLES */
@@ -196,8 +210,15 @@
     }
     
     .copyright{
-        padding: 6vw 0;
+        padding: 3vw 0 6vw 0;
         text-align: center;
         font-size: 1.3rem;
     }
+    .copyrighttwo{
+        text-align: center;
+        padding: 0;
+        padding-top: 6vw;
+        font-size: 1.3rem;
+    }
+    
 }

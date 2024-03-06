@@ -65,7 +65,8 @@ export default function Footer() {
           </div>
 
       </div>
-
+      
+      <div className={styles.copyrighttwo}>The Plug. Copyright (c) 2024</div>
       <div className={styles.copyright}>© Copyright 2024 to Present - <a href="https://www.romedigital.co" target="_blank">Rome Digital</a></div>
         
        
