@@ -1,0 +1,22 @@
+.pageTitle{
+    padding: calc(var(--section-padding-top) * 1.5) 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageTitle h1{
+    font-size: 5rem;
+}
+
+/* TABLET AND LOWER STYLES */
+@media only screen and (max-width: 990px){
+    .pageTitle{
+        padding: calc(var(--section-padding-top) * 1) 0;
+    }
+
+    .pageTitle img{
+        object-position: right;
+    }
+}

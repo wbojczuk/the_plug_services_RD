@@ -1,0 +1,35 @@
+.services{
+    position: relative;
+    padding: var(--section-padding);
+    margin: 0 10%;
+    display: inline-flex;
+    width: 80%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* SMALL LAPTOP STYLES */
+@media only screen and (min-width: 991px) and (max-width: 1400px){
+    .services{
+        margin: 0 5%;
+        width: 90%;
+    }
+}
+
+/* TABLET AND LOWER STYLES */
+@media only screen and (max-width: 990px){
+ 
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    .services{
+        margin: 0 5%;
+        width: 90%;
+    }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+
+}

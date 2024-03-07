@@ -37,10 +37,6 @@ export default function Navbar() {
 
   const currentPageTriggers = [
     {
-      triggers: ["/about"],
-      ref: aboutRef
-    },
-    {
       triggers: ["/contact"],
       ref: contactRef
     },
@@ -197,22 +193,22 @@ export default function Navbar() {
           ref={homeRef}
           />
 
-          <NavOption
+          {/* <NavOption
           title="About"
           url="/about"
           ref={aboutRef}
+          /> */}
+
+          <NavOption
+          title="Services"
+          url="/services"
+          ref={servicesRef}
           />
 
           <NavOption
           title="Reviews"
           url="/reviews"
           ref={reviewsRef}
-          />
-
-          <NavOption
-          title="Services"
-          url="/services"
-          ref={servicesRef}
           />
 
           <NavOption

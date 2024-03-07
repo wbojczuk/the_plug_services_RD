@@ -13,6 +13,7 @@ interface linkProps{
     isLocal: boolean
 }
 
+
 interface reviewType{
     title: string,
     desc: string,
@@ -35,6 +36,6 @@ interface serviceType{
     icon: any,
     title: string,
     description: string,
-    backgroundImageUrl: string,
+    backgroundImageUrl?: string,
     url?: string
 }
