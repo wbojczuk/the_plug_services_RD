@@ -8,7 +8,14 @@
 }
 
 .header h1{
-    font-size: 6rem;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(239,181,16,1) 79%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+    font-size: 5.5rem;
 }
 
 .header h3{
