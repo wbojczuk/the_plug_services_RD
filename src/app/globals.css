@@ -35,7 +35,7 @@
 body{
   font-family: var(--primary-font);
   color: var(--primary-text-color);
-  padding-top: 4.5vw;
+  padding-top: 6vw;
   background-color: var(--secondary-color);
 }
 
@@ -134,7 +134,7 @@ body::-webkit-scrollbar-track {
 /* TABLET STYLES */
 @media only screen and (min-width: 650px) and (max-width: 990px){
   body{
-    padding-top: 10vw;
+    padding-top: 13vw;
   }
   :root{
     font-size: 12px;

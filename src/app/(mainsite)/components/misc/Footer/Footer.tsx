@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.content}>
 
-        <span className={styles.logoText}>The Plug</span>
+        <img src="/img/logo.webp" alt="logo" className={styles.logo} />
 
         <div className={styles.links}>
           <aside>

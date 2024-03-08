@@ -21,7 +21,7 @@ export default function Navbar() {
   // ****************** Add NAV OPTION REFS HERE ******************
 
   const homeRef: any = useRef()
-  const aboutRef: any = useRef()
+  const ourStoryRef: any = useRef()
   const contactRef: any = useRef()
   const servicesRef: any = useRef()
   const reviewsRef: any = useRef()
@@ -51,6 +51,10 @@ export default function Navbar() {
     {
       triggers: ["/reviews"],
       ref: reviewsRef
+    },
+    {
+      triggers: ["/ourstory"],
+      ref: ourStoryRef
     }
     
   ]
@@ -168,11 +172,22 @@ export default function Navbar() {
   return (
     <nav ref={navRef} className={styles.mainNav}>
 
-<div ref={topBarRef} className={styles.topBar}></div>
+<div ref={topBarRef} className={styles.topBar}>
+<span className={styles.topBarText}>Outsource your business with The Plug!</span>
+
+<div className={styles.topBarLinks}>
+  <a href={`tel:${process.env.NEXT_PUBLIC_PHONE_NUM}`}> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"></path></svg>{process.env.NEXT_PUBLIC_PHONE_NUM_FORMATTED}</a>
+
+  <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_ADDRESS}`}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"></path></svg>{process.env.NEXT_PUBLIC_EMAIL_ADDRESS}</a>
+
+  
+  
+</div>
+</div>
 
       <div className={styles.navContent}>
       <Link href="/" className={styles.logo}>
-        <span>The Plug</span>
+        <img className={styles.logoImg} src="/img/logo.webp" alt="logo" />
       </Link>
 
 
@@ -203,6 +218,12 @@ export default function Navbar() {
           title="Services"
           url="/services"
           ref={servicesRef}
+          />
+
+          <NavOption
+          title="Our Story"
+          url="/ourstory"
+          ref={ourStoryRef}
           />
 
           <NavOption
