@@ -15,10 +15,10 @@ interface linkProps{
 
 
 interface reviewType{
-    title: string,
+    stars: number,
+    // title: string,
     desc: string,
     name: string,
-    role: string
 }
 
 
