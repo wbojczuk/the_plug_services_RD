@@ -10,10 +10,10 @@ export default function Home() {
     <>
       <Header />
       <Trusted />
-      <WhyChooseUs imgSrc="/img/shake-hands.png" />
+      <WhyChooseUs />
       <Faster />
       <WhyOutsource />
-      <AboutUs imgSrc="/img/aboutus-bg.png" />
+      <AboutUs />
     </>
   )
 }

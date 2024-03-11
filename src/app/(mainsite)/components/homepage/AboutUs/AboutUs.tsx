@@ -7,7 +7,7 @@ export default function AboutUs(props: {imgSrc: string}) {
   return (
     <section className={styles.section}>
         <div className={styles.imgWrapper}>
-            <Image className={styles.img} src={props.imgSrc} width={360} height={600} alt="Featured Service Image" />
+            <Image className={styles.img} src="/img/aboutus-bg" width={360} height={600} alt="Featured Service Image" />
         </div>
         
 
