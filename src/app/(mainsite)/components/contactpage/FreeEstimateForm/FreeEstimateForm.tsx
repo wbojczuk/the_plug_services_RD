@@ -14,10 +14,16 @@ export default function FreeEstimateForm() {
   return (
     <>
     <MessageStatus status={status} setStatus={setStatus}/>
-    <form ref={formRef} id="estimateForm" onSubmit={(evt)=>{sendEmail(evt, setStatus, {
+    <form ref={formRef} id="estimateForm" onSubmit={(evt)=>{
+
+        const obj = Object.fromEntries(new FormData(formRef.current))
+        //@ts-ignore
+        obj.Contact_Time = new Date(obj.Contact_Time).toLocaleString("en-US", {timeZone: "America/New_York"});
+        
+        sendEmail(evt, setStatus, {
         receiverEmail: process.env.NEXT_PUBLIC_DELIVERY_EMAIL!,
         recieverName: process.env.NEXT_PUBLIC_DELIVERY_EMAIL_RECIEVER!,
-        data: Object.fromEntries(new FormData(formRef.current))
+        data: obj
     }, formRef.current)}}>
 
         {/* START FIELDS */}
@@ -37,6 +43,11 @@ export default function FreeEstimateForm() {
             <div className="input-wrapper">
                
             <input required type="text" name="What_Services" id="service input" placeholder={"What Services Are You Interested In?"} />
+            </div>
+
+            <div className="input-wrapper">
+                <label className="date-input-label">Good Contact Time:</label>
+                <input className="date-input" required type="datetime-local" name="Contact_Time" id="dateInput"/>
             </div>
 
             <div className="input-wrapper">
