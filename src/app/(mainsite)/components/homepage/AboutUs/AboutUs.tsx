@@ -6,7 +6,7 @@ export default function AboutUs() {
   return (
     <section className={styles.section}>
         <div className={styles.imgWrapper}>
-            <img className={styles.img} src="/img/aboutus-bg" width={360} height={600} alt="Featured Service Image" />
+            <img className={styles.img} src="/img/aboutus-bg.png" width={360} height={600} alt="Featured Service Image" />
         </div>
         
 
