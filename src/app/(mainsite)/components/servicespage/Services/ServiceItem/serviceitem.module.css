@@ -75,6 +75,7 @@
     .serviceItem{
         width: 80%;
         padding: 4%;
+        padding-bottom: 12%;
         margin: 4vw 6%;
     }
     .icon svg{
