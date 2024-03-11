@@ -3,7 +3,7 @@ import Link from "next/link"
 import styles from "./aboutus.module.css"
 import Image from "next/image"
 
-export default function AboutUs(props: {imgSrc: string}) {
+export default function AboutUs() {
   return (
     <section className={styles.section}>
         <div className={styles.imgWrapper}>
