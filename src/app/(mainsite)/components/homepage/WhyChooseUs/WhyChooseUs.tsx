@@ -1,13 +1,12 @@
 "use client"
 import { InlineIcon } from "@iconify/react"
 import styles from "./whychooseus.module.css"
-import Image from "next/image"
 
 export default function WhyChooseUs() {
   return (
     <section className={styles.section}>
         <div className={styles.imgWrapper}>
-            <Image className={styles.img} src={"/img/shake-hands.png"} width={360} height={600} alt="Featured Service Image" />
+            <img className={styles.img} src={"/img/shake-hands.png"} width={360} height={600} alt="Featured Service Image" />
         </div>
         
 

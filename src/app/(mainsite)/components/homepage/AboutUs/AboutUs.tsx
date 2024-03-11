@@ -1,13 +1,12 @@
 "use client"
 import Link from "next/link"
 import styles from "./aboutus.module.css"
-import Image from "next/image"
 
 export default function AboutUs() {
   return (
     <section className={styles.section}>
         <div className={styles.imgWrapper}>
-            <Image className={styles.img} src="/img/aboutus-bg" width={360} height={600} alt="Featured Service Image" />
+            <img className={styles.img} src="/img/aboutus-bg" width={360} height={600} alt="Featured Service Image" />
         </div>
         
 
