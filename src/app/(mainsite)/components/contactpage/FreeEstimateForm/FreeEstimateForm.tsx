@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import "./freeestimateform.css"
 import sendEmail from "@/app/(mainsite)/controllers/sendEmail"
 import MessageStatus from "../MessageStatus/MessageStatus"
@@ -9,6 +9,21 @@ export default function FreeEstimateForm() {
 
     const [status, setStatus] = useState("none")
     const formRef: any = useRef();
+    const [currentDate, setCurrentDate] = useState("")
+
+    useEffect(()=>{
+        var tzoffset = new Date().getTimezoneOffset() * 60000; //offset in milliseconds
+        var localISOString = new Date(Date.now() - tzoffset)
+          .toISOString()
+          .slice(0, -1);
+      
+        // convert to YYYY-MM-DDTHH:MM
+        const datetimeInputString = localISOString.substring(
+          0,
+          ((localISOString.indexOf("T") | 0) + 6) | 0
+        );
+        setCurrentDate(datetimeInputString)
+    }, [])
 
 
   return (
@@ -47,7 +62,7 @@ export default function FreeEstimateForm() {
 
             <div className="input-wrapper">
                 <label className="date-input-label">Good Contact Time:</label>
-                <input className="date-input" required type="datetime-local" name="Contact_Time" id="dateInput"/>
+                <input defaultValue={currentDate} className="date-input" required type="datetime-local" name="Contact_Time" id="dateInput"/>
             </div>
 
             <div className="input-wrapper">
